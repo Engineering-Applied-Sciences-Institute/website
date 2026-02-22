@@ -30,59 +30,82 @@
   <main>
     <div class="container page-header page-header--compact">
       <h1>Our research</h1>
-      <p class="lead">We focus on modeling, estimation, and control of complex uncertain systems, with active projects in space systems and an emerging effort in computational biology. We plan to expand into other domains over time.</p>
+      <p class="lead">We focus on modeling, estimation, and control of complex uncertain systems. Our work is organized around three focus areas—space systems, dynamics and control, and computational biology—with specific projects and sub-topics under each.</p>
     </div>
 
     <section class="section section--compact">
       <div class="container">
-        <h2 class="section-title">Research projects</h2>
-        <div class="research-list">
-          <article class="research-item" id="power-beaming">
-            <h3>Satellite-to-Satellite Power Beaming</h3>
-            <p>We are developing and researching wireless power beaming between spacecraft in orbit. This work aims to enable new capabilities for space infrastructure by transferring power from one satellite to another without physical connection.</p>
-          </article>
-          <article class="research-item" id="tumbling">
-            <h3>Remote Dynamics Characterization for Uncooperative Bodies in Space</h3>
-            <p>We work on characterizing the dynamics of tumbling objects—relevant for space debris, rendezvous, and other scenarios involving complex rigid-body motion. This supports our broader focus on modeling, estimation, and control of complex uncertain systems.</p>
-          </article>
-          <article class="research-item" id="computational-biology">
-            <h3>Computational Biology for Medical Applications</h3>
-            <p>An emerging project applying <strong>networking and dynamical systems</strong> approaches to biological systems, with applications in medicine. We are exploring how these methods can yield insight into biological networks and dynamics; the precise direction of the work is still taking shape.</p>
-          </article>
-        </div>
+        <h2 class="section-title">Focus areas</h2>
+        <p class="section-subtitle">Our active work is organized by focus area. Under each we list specific projects and sub-topics.</p>
+
+        <article class="focus-area-block" id="space-systems">
+          <div class="focus-area-block-header">
+            <span class="focus-area-num" aria-hidden="true">01</span>
+            <div>
+              <h3>Space systems</h3>
+            </div>
+          </div>
+          <p class="focus-area-block-intro">We work on space infrastructure and in-space capabilities: power beaming between spacecraft, characterization of uncooperative bodies, and related dynamics and control problems.</p>
+          <div class="project-list">
+            <div class="project-item" id="power-beaming">
+              <h4>Satellite-to-satellite power beaming</h4>
+              <p>We are developing and researching wireless power beaming between spacecraft in orbit to enable new capabilities for space infrastructure. Our current emphasis is <strong>system-level application</strong>. We are moving toward physics-based simulations, controls for accurate pointing, networking of constellations, and thermal analysis.</p>
+            </div>
+            <div class="project-item" id="uncooperative-body">
+              <h4>Uncooperative body characterization</h4>
+              <p>We work on characterizing the dynamics of tumbling and uncooperative objects—relevant for space debris, rendezvous, and scenarios involving complex rigid-body motion. Our approach includes <strong>vision-based methods for 3D reconstruction and feature recognition</strong>, using both traditional and machine learning methods.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="focus-area-block" id="dynamics-control">
+          <div class="focus-area-block-header">
+            <span class="focus-area-num" aria-hidden="true">02</span>
+            <div>
+              <h3>Dynamics, estimation &amp; control</h3>
+            </div>
+          </div>
+          <p class="focus-area-block-intro">Cross-cutting methods for modeling, estimation, and control of complex uncertain systems. This theme supports our space work (e.g. tumbling dynamics, pointing control for power beaming) and our work in computational biology.</p>
+        </article>
+
+        <article class="focus-area-block" id="computational-biology">
+          <div class="focus-area-block-header">
+            <span class="focus-area-num" aria-hidden="true">03</span>
+            <div>
+              <h3>Computational biology</h3>
+            </div>
+          </div>
+          <p class="focus-area-block-intro">We apply dynamical systems and control-theoretic approaches to biological networks for medical applications. Our work is still evolving.</p>
+          <div class="project-list">
+            <div class="project-item">
+              <h4>Current direction</h4>
+              <p>One topic we are investigating is <strong>computational stability and control of neurodegenerative disease networks</strong>, with ALS as an initial focus. We have not yet fixed the full scope of this line of work.</p>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
     <section class="section section--compact" style="background: var(--color-surface);">
       <div class="container">
         <h2 class="section-title">Publications &amp; outputs</h2>
-        <p class="section-subtitle">As our projects mature, we will share reports, preprints, and other outputs here. Check back for updates.</p>
-        <div class="card-grid">
-          <article class="card">
-            <div class="card-body">
-              <h3>Reports</h3>
-              <p>Full-length studies and evaluations. Add a link to a reports listing or PDFs.</p>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-body">
-              <h3>Policy briefs</h3>
-              <p>Short summaries for policymakers and practitioners.</p>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-body">
-              <h3>Data &amp; tools</h3>
-              <p>Datasets, dashboards, or interactive tools when applicable.</p>
-            </div>
-          </article>
+        <p class="section-subtitle">As our projects mature, we will share reports, preprints, and data here. Papers will be listed with title, authors, date, and link (e.g. arXiv or PDF).</p>
+        <div class="pub-list-wrap">
+          <p class="pub-list-empty">No publications yet. Check back for updates.</p>
+          <!-- When you have papers, replace the above with a list like:
+          <ul class="pub-list">
+            <li><a href="#">Paper title</a> — Authors, YYYY. <span class="pub-type">Preprint</span></li>
+          </ul>
+          -->
         </div>
+        <h3 class="subsection-title">Data &amp; tools</h3>
+        <p>When available, we will provide links to datasets, code, or methodological documentation to support reproducibility and collaboration.</p>
       </div>
     </section>
 
     <section class="section section--compact">
       <div class="container">
-        <p style="text-align: center;">
+        <p class="section-cta">
           <a href="contact.html" class="btn btn-primary">Request data or collaborate</a>
         </p>
       </div>
@@ -114,7 +137,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Engineering and Applied Sciences Institute (EASI). All rights reserved.</p>
+        <p>&copy; 2026 Engineering and Applied Sciences Institute (EASI). All rights reserved.</p>
       </div>
     </div>
   </footer>

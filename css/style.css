@@ -138,11 +138,20 @@ a:hover {
   line-height: 1.2;
 }
 
+.hero-tagline {
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: 0.9;
+  margin: 0 0 var(--space-xs);
+  letter-spacing: 0.02em;
+}
+
 .hero .lead {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   opacity: 0.95;
-  max-width: 36rem;
+  max-width: 40rem;
   margin: 0 auto var(--space-lg);
+  line-height: 1.55;
 }
 
 .hero-actions {
@@ -387,6 +396,8 @@ a:hover {
 
 .contact-form-wrap {
   max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Team list */
@@ -461,6 +472,198 @@ a:hover {
 .research-item p {
   margin: 0;
   color: var(--color-text-muted);
+}
+
+/* Focus areas (SwRI / lab-style) */
+.focus-area-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-lg);
+}
+
+.focus-area-card {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+.focus-area-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.focus-area-num {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 0.05em;
+  padding: var(--space-md) var(--space-md) 0;
+}
+
+.focus-area-body {
+  padding: var(--space-sm) var(--space-md) var(--space-md);
+  flex: 1;
+}
+
+.focus-area-body h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 0 0 var(--space-xs);
+}
+
+.focus-area-tags {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.focus-area-body p {
+  margin: 0 0 var(--space-sm);
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.focus-area-body a {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Focus area block (research page: area with projects inside) */
+.focus-area-block {
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--color-border);
+}
+.focus-area-block:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.focus-area-block-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+.focus-area-block-header .focus-area-num {
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.focus-area-block-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 0 0 var(--space-xs);
+}
+.focus-area-block-header .focus-area-tags {
+  margin: 0;
+}
+
+.focus-area-block-intro {
+  margin: 0 0 var(--space-md);
+  color: var(--color-text);
+  max-width: 50rem;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.project-item {
+  padding: var(--space-md);
+  background: var(--color-bg);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--color-accent);
+}
+.project-item h4 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 0 0 var(--space-xs);
+}
+.project-item p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+/* Who we are block */
+.who-we-are .section-subtitle {
+  margin-bottom: var(--space-md);
+}
+.who-we-are p + p {
+  margin-top: var(--space-md);
+}
+
+/* About: mission & focus question */
+.mission-statement {
+  font-size: 1.15rem;
+  margin: 0 0 var(--space-md);
+}
+.focus-question {
+  margin: 0;
+  padding: var(--space-md);
+  background: var(--color-bg);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--color-accent);
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+/* Publications list */
+.subsection-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: var(--space-lg) 0 var(--space-sm);
+}
+
+.pub-list-wrap {
+  margin-bottom: var(--space-md);
+}
+
+.pub-list-empty {
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin: 0;
+}
+
+.pub-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pub-list li {
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem;
+}
+.pub-list li:last-child {
+  border-bottom: none;
+}
+.pub-type {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 /* Mobile nav */

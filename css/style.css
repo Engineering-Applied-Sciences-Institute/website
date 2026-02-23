@@ -447,6 +447,10 @@ a:hover {
   color: var(--color-text-muted);
 }
 
+.team-member .role + p {
+  margin-top: var(--space-xs);
+}
+
 /* Research areas */
 .research-list {
   display: flex;

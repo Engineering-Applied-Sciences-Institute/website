@@ -89,9 +89,16 @@ a:hover {
 }
 .logo a {
   color: inherit;
+  display: block;
 }
 .logo a:hover {
   color: var(--color-primary-light);
+}
+.logo img {
+  display: block;
+  height: 44px;
+  width: auto;
+  vertical-align: middle;
 }
 
 .nav-toggle {

@@ -342,6 +342,15 @@ a:hover {
   margin: var(--space-lg) 0 0;
 }
 
+.page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin: 0;
+}
+
 .page-research .section.section--compact:last-of-type {
   padding-top: var(--space-sm);
 }

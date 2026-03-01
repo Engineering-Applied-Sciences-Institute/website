@@ -272,7 +272,7 @@ a:hover {
 .site-footer {
   background: var(--color-primary);
   color: rgba(255, 255, 255, 0.9);
-  padding: var(--space-xl) 0 var(--space-lg);
+  padding: var(--space-lg) 0 var(--space-md);
   margin-top: var(--space-xl);
 }
 
@@ -283,34 +283,22 @@ a:hover {
   color: #fff;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--space-lg);
-  margin-bottom: var(--space-lg);
-}
-
-.footer-grid h4 {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  margin: 0 0 var(--space-sm);
-  color: #fff;
-}
-
-.footer-grid ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.footer-grid li {
-  margin-bottom: var(--space-xs);
-}
-
 .footer-bottom {
-  padding-top: var(--space-md);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  width: 100%;
   font-size: 0.9rem;
   opacity: 0.85;
+}
+.footer-bottom p:first-child {
+  margin: 0;
+}
+.footer-bottom p:last-child {
+  margin: 0;
+  margin-left: auto;
 }
 
 /* Page content */

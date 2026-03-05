@@ -4,6 +4,7 @@
     { "source": "/about", "destination": "/about.html" },
     { "source": "/research", "destination": "/research.html" },
     { "source": "/team", "destination": "/team.html" },
-    { "source": "/contact", "destination": "/contact.html" }
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/privacy", "destination": "/privacy.html" }
   ]
 }
